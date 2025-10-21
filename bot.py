@@ -55,7 +55,7 @@ async def about(message: Message):
         )
 
         kb = InlineKeyboardBuilder()
-        kb.button(text="📅 Записатись на урок", url="https://mathmento.github.io/mathmento2/#contacts")
+        kb.button(text="📅 Записатись на урок", url="https://booking.easyweek.com.ua/mathmento")
         kb.button(text="🌐 Відвідати сайт", url="https://mathmento.github.io/mathmento2/")
         kb.button(text="📸 Instagram", url="https://www.instagram.com/nmt_math._/")
         kb.adjust(1)
