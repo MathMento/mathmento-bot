@@ -1,4 +1,14 @@
 import asyncio
+
+async def keep_alive():
+    while True:
+        print("✅ Bot is alive!")
+        await asyncio.sleep(300)  # перевірка кожні 10 хв
+
+async def main():
+    asyncio.create_task(keep_alive())
+    # твій код нижче
+import asyncio
 import random
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, CallbackQuery, FSInputFile
@@ -173,7 +183,7 @@ async def faq(message: Message):
 @dp.message(F.text == "📅 Записатись на урок")
 async def signup(message: Message):
     kb = InlineKeyboardBuilder()
-    kb.button(text="🔗 Відкрити сайт", url="https://booking.easyweek.com.ua/mathmento")
+    kb.button(text="🔗 Відкрити сайт", url=https://mathmento.github.io/mathmento2/")
     await message.answer("🗓 Обери зручний час 👇", reply_markup=kb.as_markup())
 
 # ---------------------------- #
