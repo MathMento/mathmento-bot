@@ -183,7 +183,7 @@ async def faq(message: Message):
 @dp.message(F.text == "📅 Записатись на урок")
 async def signup(message: Message):
     kb = InlineKeyboardBuilder()
-    kb.button(text="🔗 Відкрити сайт", url=https://mathmento.github.io/mathmento2/")
+    kb.button(text="📎 Відкрити сайт", url="https://mathmento.github.io/mathmento2/")
     await message.answer("🗓 Обери зручний час 👇", reply_markup=kb.as_markup())
 
 # ---------------------------- #
