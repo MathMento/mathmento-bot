@@ -15,7 +15,7 @@ from aiogram.types import Message, CallbackQuery, FSInputFile
 from aiogram.filters import Command
 from aiogram.utils.keyboard import ReplyKeyboardBuilder, InlineKeyboardBuilder
 
-BOT_TOKEN = "7526638876:AAGG1SF7VJP995VkqKkKD0F7sqIkii56Ooo"
+BOT_TOKEN = "7526638876:AAHm0mCjCmtP5Miix7apdxxO9vDCEPiHMyk"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
