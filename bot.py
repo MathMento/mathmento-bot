@@ -133,7 +133,7 @@ async def handle_answer(message: Message):
 
         kb = InlineKeyboardBuilder()
         kb.button(text="🔁 Пройти ще раз", callback_data="retry_test")
-        kb.button(text="📅 Записатись на урок", url="https://mathmento.github.io/mathmento2/#contacts")
+        kb.button(text="📅 Записатись на урок", url="https://booking.easyweek.com.ua/mathmento")
         await message.answer(
             f"{emoji} <b>Твій результат:</b> {correct}/3 правильних!\n\n{comment}",
             parse_mode="HTML",
@@ -173,7 +173,7 @@ async def faq(message: Message):
 @dp.message(F.text == "📅 Записатись на урок")
 async def signup(message: Message):
     kb = InlineKeyboardBuilder()
-    kb.button(text="🔗 Відкрити сайт", url="https://mathmento.github.io/mathmento2/#contacts")
+    kb.button(text="🔗 Відкрити сайт", url="https://booking.easyweek.com.ua/mathmento")
     await message.answer("🗓 Обери зручний час 👇", reply_markup=kb.as_markup())
 
 # ---------------------------- #
